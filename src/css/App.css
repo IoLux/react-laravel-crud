@@ -1,5 +1,21 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  color: white;
+  background-color: black;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.card-title {
+  color: white;
+}
+
+.card {
+  background-color: #181a1b;
+}
+
+.nav-link {
+  color: white;
 }
 
 .App-logo {
@@ -35,4 +51,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+
+.submit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.edit-form {
+  max-width: 300px;
+  margin: auto;
 }
