@@ -68,3 +68,13 @@
   max-width: 300px;
   margin: auto;
 }
+
+/* section {
+  padding-top: 5rem;
+} */
+
+#jumbotron {
+  background-image: url("https://wallpaperaccess.com/full/170249.jpg");
+  padding-bottom: 6rem;
+  background-position: 100px;
+}
