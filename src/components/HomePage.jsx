@@ -1,12 +1,11 @@
 import React from "react";
-// import "../css/HomePage.css";
 
 const HomePage = () => {
   return (
     <div className="container col-xxl-8 px-4 py-5" id="homepage">
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-10 col-sm-8 col-lg-6">
-          <img src="https://source.unsplash.com/random" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" data-aos="fade-down" />
+          <img src="https://source.unsplash.com/random/500x500" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" data-aos="fade-down" />
         </div>
         <div className="col-lg-6" data-aos="fade-down">
           <h1 className="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
@@ -25,7 +24,6 @@ const HomePage = () => {
         </div>
       </div>
     </div>
-    // <div className="b-example-divider"></div>
   );
 };
 

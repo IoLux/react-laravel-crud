@@ -5,11 +5,11 @@ const HomePage = () => {
   return (
     <div className="container col-xxl-8 px-4 py-5" id="about">
       <div className="row flex-lg-row align-items-center g-5 py-5">
+        <h1 className="display-5 fw-bold lh-1 mb-3 text-center">About</h1>
         <div className="col-10 col-sm-8 col-lg-6" data-aos="zoom-in">
           <iframe title="about" src="https://www.youtube.com/embed/4Tr0otuiQuU" style={{ width: 500, height: 300 }} frameBorder="0" allowFullScreen></iframe>
         </div>
         <div className="col-lg-6" data-aos="fade-in-up">
-          <h1 className="display-5 fw-bold lh-1 mb-3 text-center">About</h1>
           <p className="lead" style={{ fontSize: "15px" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus nunc laoreet viverra lacinia. In tincidunt aliquam lacus a laoreet. Aliquam finibus, nunc ac suscipit pretium, ex massa maximus nisl, ut rutrum ante nunc
             non elit. Morbi bibendum quam vel ipsum molestie, ut euismod lacus auctor. Nulla non augue augue. Quisque eget ante in augue ultrices elementum. Proin rhoncus vulputate euismod. Pellentesque tempor mi arcu, at sodales dolor
@@ -37,7 +37,6 @@ const HomePage = () => {
         </div>
       </div>
     </div>
-    // <div className="b-example-divider"></div>
   );
 };
 
