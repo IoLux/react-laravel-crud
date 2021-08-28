@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://laravel-react-api.test/api",
+  baseURL: "http://laravel-first-try.epizy.com/api",
   headers: {
     "Content-type": "application/json",
   },
