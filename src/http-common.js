@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://laravel-first-try.epizy.com/api",
+  baseURL: "https://jsonplaceholder.typicode.com",
   headers: {
     "Content-type": "application/json",
   },
