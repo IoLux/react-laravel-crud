@@ -38,7 +38,7 @@ const UpdateArticle = (props) => {
       body: article.body,
     };
 
-    ServicesDataRoutes.update(article.slug, data)
+    ServicesDataRoutes.update(article.id, data)
       .then((res) => {
         // setArticle({
         //   id: res.data.id,
@@ -57,10 +57,7 @@ const UpdateArticle = (props) => {
   return (
     <div>
       {submit ? (
-        <div
-          className="container w-100"
-          style={{ paddingBottom: "158px", paddingTop: "100px" }}
-        >
+        <div className="container w-100" style={{ paddingBottom: "158px", paddingTop: "100px" }}>
           <div className="row justify-content-center">
             <div className="col-md-6">
               <div className="text-center">
@@ -79,29 +76,12 @@ const UpdateArticle = (props) => {
               <div className="col-md-6">
                 <div className="form-group">
                   <label htmlFor="title">Title</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="title"
-                    required
-                    value={article.title}
-                    onChange={handleChange}
-                    name="title"
-                  />
+                  <input type="text" className="form-control" id="title" required value={article.title} onChange={handleChange} name="title" />
                 </div>
 
                 <div className="form-group mt-2 mb-3">
                   <label htmlFor="body">Description</label>
-                  <textarea
-                    name="body"
-                    id="body"
-                    cols="40"
-                    rows="10"
-                    className="form-control"
-                    required
-                    value={article.body}
-                    onChange={handleChange}
-                  />
+                  <textarea name="body" id="body" cols="40" rows="10" className="form-control" required value={article.body} onChange={handleChange} />
                 </div>
 
                 <button onClick={onUpdate} className="btn btn-success mt-4">
