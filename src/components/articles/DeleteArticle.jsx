@@ -28,7 +28,7 @@ const DeleteArticle = (props) => {
   }, [props.match.params.slug]);
 
   const deleteArticle = () => {
-    ServicesDataRoutes.remove(currentArticle.slug)
+    ServicesDataRoutes.remove(currentArticle.id)
       .then((res) => {
         // console.log(res.data);
         // props.history.push("/article"); //use to redirect
@@ -43,10 +43,7 @@ const DeleteArticle = (props) => {
     <div>
       {submit ? (
         <div>
-          <div
-            className="container-fluid"
-            style={{ paddingTop: "100px", paddingBottom: "100px" }}
-          >
+          <div className="container-fluid" style={{ paddingTop: "100px", paddingBottom: "100px" }}>
             <div className="row justify-content-around">
               <div className="col-md-6">
                 <div className="text-center mt-4 mb-4">
@@ -67,10 +64,7 @@ const DeleteArticle = (props) => {
             <div className="text-center mt-4 mb-3">
               <h1 style={{ color: "red" }}>WARNING</h1>
               <p>a fair warning, to those whom delete the article.</p>
-              <p>
-                Article that has been deleted, cannot be recover (this meaning
-                it will gone pooof!!)
-              </p>
+              <p>Article that has been deleted, cannot be recover (this meaning it will gone pooof!!)</p>
               <p>please be caution with the your decision</p>
               <p>if your certain with your decision to delete the article</p>
               <p>click the delete button below.</p>
