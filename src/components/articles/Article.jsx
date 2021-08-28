@@ -9,13 +9,22 @@ const Article = ({ article }) => {
               <div className="card-body">
                 <h5 className="card-title">{article.title}</h5>
                 <div className="btn-group justify-content-center" role="group" aria-label="Basic example">
-                  <a className="btn btn-primary" href={`/article/update/${article.slug}`}>
+                  {/* <a className="btn btn-primary" href={`/article/update/${article.slug}`}>
                     Update
                   </a>
                   <a className="btn btn-info" href={`/article/${article.slug}`}>
                     Read More...
                   </a>
                   <a className="btn btn-danger" href={`/article/delete/${article.slug}`}>
+                    Delete
+                  </a> */}
+                  <a className="btn btn-primary" href={`/article/update/${article.id}`}>
+                    Update
+                  </a>
+                  <a className="btn btn-info" href={`/article/${article.id}`}>
+                    Read More...
+                  </a>
+                  <a className="btn btn-danger" href={`/article/delete/${article.id}`}>
                     Delete
                   </a>
                 </div>
